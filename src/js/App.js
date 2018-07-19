@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+//import style from "./../styles/main.css";
+
 const App = () => {
   return (
     <div>
-      <p>React here!</p>
+      <p>Webpack 4 react starter kit!</p>
     </div>
   );
 };
