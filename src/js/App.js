@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-//import style from "./../styles/main.css";
+import style from "./../styles/main.css";
 
 const App = () => {
   return (
-    <div>
+    <div>npm install extract-text-webpack-plugin --save-dev
+
       <p>Webpack 4 react starter kit!</p>
     </div>
   );

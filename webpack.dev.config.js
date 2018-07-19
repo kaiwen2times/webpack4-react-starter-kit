@@ -1,10 +1,9 @@
 const path = require('path');
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const APP_DIR = path.resolve(__dirname, "./src/js");
-const CSS_DIR = path.resolve(__dirname, "./src/css");
+// const CSS_DIR = path.resolve(__dirname, "./src/css");
 const HTML_DIR = path.resolve(__dirname, "./src/html");
 const DIST_DIR = path.resolve(__dirname, "./dist");
 
@@ -36,8 +35,14 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        include: CSS_DIR,
-        use: [MiniCssExtractPlugin.loader, "css-loader"]
+        use: [
+          {
+            loader: "style-loader" // creates style nodes from JS strings
+          },
+          {
+            loader: "css-loader" // translates CSS into CommonJS
+          },
+        ]
       }
     ]
   },
@@ -46,9 +51,5 @@ module.exports = {
       template: HTML_DIR + "/index.html",
       filename: "index.html"
     }),
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    })
   ]
 };
