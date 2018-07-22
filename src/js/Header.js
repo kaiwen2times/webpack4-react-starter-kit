@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
   render() {
     return (
-      <header class="navbar navbar-fixed-top navbar-inverse">
-        <div class="container">
+      <header className="navbar navbar-fixed-top navbar-inverse">
+        <div className="container">
           <nav>
-            <ul class="nav navbar-nav navbar-right">
-              <li>Link1</li>
-              <li>Link2</li>
+            <ul className="nav navbar-nav navbar-right">
+            <Link to="/">Link1</Link>
+            <Link to="*">Link2</Link>
             </ul>
           </nav>
         </div>
@@ -17,4 +18,3 @@ class Header extends Component {
   };
 };
 export default Header;
-
