@@ -1,15 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import style from "./../styles/main.css";
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import NotFound from './NotFound';
 
-const App = () => {
-  return (
-    <div>npm install extract-text-webpack-plugin --save-dev
-
-      <p>Webpack 4 react starter kit!</p>
-    </div>
-  );
-};
-export default App;
-ReactDOM.render(<App />, document.getElementById("app"));
-
+class App extends Component {
+  render() {
+    return (
+      <div className="container">
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path='*' component={NotFound}/>
+          </Switch>
+        </BrowserRouter>
+      </div>
+    )
+  }
+}
+render(<App />, document.getElementById("app"));

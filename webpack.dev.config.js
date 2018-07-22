@@ -1,7 +1,7 @@
 const path = require('path');
-
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
+// directories go here
 const APP_DIR = path.resolve(__dirname, "./src/js");
 // const CSS_DIR = path.resolve(__dirname, "./src/css");
 const HTML_DIR = path.resolve(__dirname, "./src/html");
@@ -29,7 +29,6 @@ module.exports = {
         use: [
           {
             loader: "html-loader",
-           //  options: { minimize: true }
           }
         ]
       },
@@ -37,10 +36,10 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: "style-loader" // creates style nodes from JS strings
+            loader: "style-loader"
           },
           {
-            loader: "css-loader" // translates CSS into CommonJS
+            loader: "css-loader"
           },
         ]
       }
