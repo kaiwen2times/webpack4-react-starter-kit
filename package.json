@@ -25,7 +25,8 @@
   },
   "scripts": {
     "test": "echo \"Error, no test specified\" && exit 1",
-    "dev": "webpack-dev-server --mode development --config webpack.dev.config.js --open",
+    "dev": "webpack --mode development --config webpack.dev.config.js",
+    "server": "webpack-dev-server --mode development --config webpack.dev.config.js --open",
     "prod": "webpack --mode production --config webpack.prod.config.js"
   },
   "repository": {
