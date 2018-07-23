@@ -1,3 +1,4 @@
+// webpack v4
 const path = require('path');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
