@@ -101,7 +101,6 @@ class Resume extends Component {
             <div className="sectionTitle">
               <h1>Work Experience</h1>
             </div>
-            
             <div className="sectionContent">
               <article>
                 <h2>Constant Contact</h2>
@@ -119,7 +118,12 @@ class Resume extends Component {
                   <li>Wrote unit and integration tests.</li>
                 </ul>
               </article>
+            </div>
+            <div className="clear"></div>
+          </section>
 
+          <section>
+            <div className="sectionContent">
               <article>
                 <h2>Constant Contact</h2>
                 <div className="gridWrapper">
@@ -135,7 +139,12 @@ class Resume extends Component {
                   <li>Wrote unit and integration tests.</li>
                 </ul>
               </article>
-              
+            </div>
+            <div className="clear"></div>
+          </section>
+
+          <section>
+            <div className="sectionContent">
               <article>
                 <h2>Eagledream Health</h2>
                 <div className="gridWrapper">
@@ -152,8 +161,7 @@ class Resume extends Component {
                   <li>Wrote unit and integration tests.</li>
                 </ul>
               </article>
-
-            </div>
+              </div>
             <div className="clear"></div>
           </section>
 

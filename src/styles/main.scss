@@ -1,4 +1,13 @@
 /* site styles */
+/* latin */
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gloria Hallelujah'), local('GloriaHallelujah'), url(https://fonts.gstatic.com/s/gloriahallelujah/v9/LYjYdHv3kUk9BMV96EIswT9DIbW-MIS11zOmvVCE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
   border:0;
   font:inherit;
@@ -13,7 +22,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 }
 
 html, body {
-  font-family: 'Lato', helvetica, arial, sans-serif; font-size: 18px; color: #222;
+  font-family:'Gloria Hallelujah', cursive;
+  // font-family: 'Lato', helvetica, arial, sans-serif; font-size: 18px; color: #222;
 }
 
 .clear {
@@ -52,14 +62,14 @@ article a:hover {
 #name h1 {
   font-size: 2.5em;
   font-weight: 700;
-  font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+  //font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
   margin-bottom: -6px;
 }
 
 #name h2 {
   font-size: 2em;
   margin-left: 2px;
-  font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+  //font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 }
 
 #mainArea {
@@ -136,14 +146,14 @@ section:last-child {
 }
 
 .sectionTitle h1 {
-  font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+  //font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 1.5em;
   color: #2C3E50;
 }
 
 .sectionContent h2 {
-  font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+  //font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   margin-bottom: -2px;
 }
