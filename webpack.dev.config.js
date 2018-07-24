@@ -14,11 +14,12 @@ module.exports = {
   },
   output: {
     path: DIST_DIR,
-    filename: 'index.js'
+    filename: 'index.js',
+    publicPath: DIST_DIR
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: true,
+    contentBase: DIST_DIR,
+    //compress: true,
     port: 9000
   },
   module: {
@@ -53,7 +54,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
+        test: /\.jpeg$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
         loader: 'file-loader?name=[name].[ext]'
       }
     ]

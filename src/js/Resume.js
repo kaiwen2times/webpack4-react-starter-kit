@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import img from './../img/me-profile.png'
 
 class Resume extends Component {
   render() {
@@ -6,6 +7,7 @@ class Resume extends Component {
       <div id="cv" className="instaFade">
         <div className="mainDetails">
           <div id="headshot" className="quickFade">
+            <img src={img} />
           </div>
           
           <div id="name">
