@@ -27,8 +27,9 @@
   "scripts": {
     "test": "echo \"Error, no test specified\" && exit 1",
     "dev": "webpack --mode development --config webpack.dev.config.js",
-    "start": "webpack-dev-server --mode development --config webpack.dev.config.js --open",
-    "prod": "webpack --mode production --config webpack.prod.config.js"
+    "server": "webpack-dev-server --mode development --config webpack.dev.config.js --open",
+    "prod": "webpack --mode production --config webpack.prod.config.js",
+    "start": "npm run dev; npm run server"
   },
   "repository": {
     "type": "git",

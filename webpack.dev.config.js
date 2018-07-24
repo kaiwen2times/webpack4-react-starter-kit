@@ -1,12 +1,11 @@
 // webpack v4
 const path = require('path');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 // directories go here
-const APP_DIR = path.resolve(__dirname, "./src/js");
-// const CSS_DIR = path.resolve(__dirname, "./src/css");
-const HTML_DIR = path.resolve(__dirname, "./src/html");
-const DIST_DIR = path.resolve(__dirname, "./dist");
+const APP_DIR = path.resolve(__dirname, './src/js');
+const HTML_DIR = path.resolve(__dirname, './src/html');
+const DIST_DIR = path.resolve(__dirname, './dist');
 
 module.exports = {
   entry: {
@@ -15,7 +14,7 @@ module.exports = {
   output: {
     path: DIST_DIR,
     filename: 'index.js',
-    publicPath: DIST_DIR
+    publicPath: '/'
   },
   devServer: {
     contentBase: DIST_DIR,
@@ -28,14 +27,14 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: 'babel-loader'
         }
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
+            loader: 'html-loader',
           }
         ]
       },
@@ -43,13 +42,13 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader: "style-loader"
+            loader: 'style-loader'
           },
           {
-            loader: "css-loader"
+            loader: 'css-loader'
           },
           {
-            loader: "sass-loader"
+            loader: 'sass-loader'
           }
         ]
       },
@@ -61,8 +60,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: HTML_DIR + "/index.html",
-      filename: "index.html"
+      template: HTML_DIR + '/index.html',
+      filename: 'index.html'
     }),
   ]
 };
