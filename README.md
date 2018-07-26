@@ -33,7 +33,7 @@ npm install
 Next let's get the server up and running
 
 ```
-npm run server
+npm start
 ```
 
 ## Running the tests

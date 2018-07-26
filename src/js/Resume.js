@@ -1,31 +1,11 @@
 import React, { Component } from 'react';
-import img from './../img/me-profile.png'
+import ContactDetailsContainer from './ContactDetailsContainer';
 
 class Resume extends Component {
   render() {
     return (
       <div id="cv" className="instaFade">
-        <div className="mainDetails">
-          <div id="headshot" className="quickFade">
-            <img src={img} />
-          </div>
-          
-          <div id="name">
-            <h1 className="quickFade delayTwo">Kaiwen Zheng</h1>
-            <h4 className="quickFade delayThree">Computer Engineering Student at RIT</h4>
-          </div>
-          
-          <div id="contactDetails" className="quickFade delayFour">
-            <ul>
-              <li><a href="mailto:kxz6582@rit.edu" target="_top">Email: kxz6582@rit.edu</a></li>
-              <li><a href="https://github.com/kaiwen2times">Github: github.com/kaiwen2times</a></li>
-              <li><a href="https://www.linkedin.com/in/kaiwen-zheng-733127b2">LinkedIn: Kaiwen Zheng</a></li>
-              <li><a href="tel://1-585-733-4987">Phone: (585) 733-4987</a></li>
-              <li>Address: 4851 Triphammer Rd, Geneseo, NY</li>
-            </ul>
-          </div>
-          <div className="clear"></div>
-        </div>
+        <ContactDetailsContainer />
         
         <div id="mainArea" className="quickFade delayFive">
           <section>
