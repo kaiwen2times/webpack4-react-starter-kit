@@ -1,0 +1,21 @@
+{
+  "title": "Skill HIghlights",
+  "skills": [
+    {
+      "title": "Programming Languages",
+      "lists": ["Java", "Javascript", "Pyton", "C", "Ruby", "Assembly"]
+    },
+    {
+      "title": "Web Development",
+      "lists": ["Node.js", "React.js", "Backbone.js", "Spring", "Spring boot"]
+    },
+    {
+      "title": "Testing",
+      "lists": ["Jasmine", "Protactor", "Junit", "Rspec", "Cucumber"]
+    },
+    {
+      "title": "Dev Ops",
+      "lists": ["AWS", "Docker", "Jenkins", "Puppet", "OpenStack"]
+    }
+  ]
+}

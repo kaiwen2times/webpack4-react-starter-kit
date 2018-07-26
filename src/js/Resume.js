@@ -1,83 +1,22 @@
 import React, { Component } from 'react';
-import ContactDetailsContainer from './ContactDetailsContainer';
+// contact details
+import ContactDetails from './ContactDetails';
+import detailsData from './../json/contactDetails.json'
+// summary
+import Summary from './Summary';
+import summaryData from './../json/summary.json'
+// skills
+import Skills from './Skills';
+import skillsData from './../json/skills.json'
 
 class Resume extends Component {
   render() {
     return (
       <div id="cv" className="instaFade">
-        <ContactDetailsContainer />
-        
+        <ContactDetails data={detailsData} />
         <div id="mainArea" className="quickFade delayFive">
-          <section>
-            <article>
-              <div className="sectionTitle">
-                <h1>Summary</h1>
-              </div>
-              
-              <div className="sectionContent">
-                <p>Computer engineering student with internship experience in front-end, web services and testing, including functional front-end development, API design, unit and integration testing. Strengths in being detail oriented, dependable, and fast learning. Graduating in December 2017 with 3.64 accumulative GPA seeking full-time opportunities in the field of software engineering.</p>
-              </div>
-            </article>
-            <div className="clear"></div>
-          </section>
-
-          <section>
-            <div className="sectionTitle">
-              <h1>Skill HIghlights</h1>
-            </div>
-            
-            <div className="sectionContent">
-              <h4>Languages</h4>
-              <ul className="keySkills">
-                <li>Java</li>
-                <li>Ruby</li>
-                <li>Python</li>
-                <li>C</li>
-                <li>Matlab</li>
-                <li>Assembly</li>
-              </ul>
-
-              <h4>Web Development</h4>
-              <ul className="keySkills">
-                <li>Javascript</li>
-                <li>Node</li>
-                <li>React</li>
-                <li>Angular</li>
-                <li>Webpack</li>
-                <li>Ruby on Rails</li>
-                <li>Spring Framework</li>
-              </ul>
-
-              <h4>Platforms</h4>
-              <ul className="keySkills">
-                <li>AWS</li>
-                <li>Heroku</li>
-                <li>Vagrant</li>
-                <li>Linux</li>
-                <li>MacOS</li>
-                <li>Windows</li>
-              </ul>
-
-              <h4>Testing</h4>
-              <ul className="keySkills">
-                <li>Jasmine</li>
-                <li>Protractor</li>
-                <li>Rspec</li>
-                <li>Cucumber</li>
-                <li>Junit</li>
-              </ul>
-
-              <h4>Embeded Systems</h4>
-              <ul className="keySkills">
-                <li>Arduino</li>
-                <li>Raspberry Pi</li>
-                <li>FPGA</li>
-                <li>VHDL</li>
-                <li>Verilog</li>
-              </ul>
-            </div>
-            <div className="clear"></div>
-          </section>
+          <Summary data={summaryData} />
+          <Skills data={skillsData} />
           
           <section>
             <div className="sectionTitle">
