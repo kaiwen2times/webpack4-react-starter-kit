@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Work Experience",
+    "place": "Constant Contact",
+    "subDetails": [
+      "Software Engineer Intern",
+      "May 2017 - August 2017"
+    ],
+    "points": [
+      "Contributed to the development of front-end and web services as a member of the \"Tesla\" scrum team.",
+      "Created endpoints for donation and payment services in Spring.",
+      "Used BackboneJS to implement front-end features.",
+      "Enhanced the functionality of gems used for supporting cucumber testing.",
+      "Helped to maintain and debug continuous integration pipeline.",
+      "Upgraded CentOS version on servers.",
+      "Wrote unit and integration tests."
+    ]
+  },
+  {
+    "title": "",
+    "place": "Constant Contact",
+    "subDetails": [
+      "Software Engineer Intern",
+      "May 2016 - December 2016"
+    ],
+    "points": [
+      "Designed, developed, and tested front-end functionality as a member of the \"Toolkit\" scrum team.",
+      "Used Spring to create controllers and endpoints for Toolkit web services.",
+      "Implemented UI functionality using angular and ES5 javascript.",
+      "Contributed to the enhancement of core modules used to manage iframes.",
+      "Worked with continuous deployment team to debug issues in the pipeline.",
+      "Wrote unit and integration tests."
+    ]
+  },
+  {
+    "title": "",
+    "place": "Eagledream Health",
+    "subDetails": [
+      "Full Stack Engineer Intern",
+      "May 2015 - January 2016"
+    ],
+    "points": [
+      "Worked in a scrum team. Primarily focuses were front-end development and testing.",
+      "Involved with scrum ceremonies and production feature development.",
+      "Wrote queries in Postgres to retrieve data.",
+      "Implemented Restful endpoints for web services.",
+      "Developed UI directives in angular.",
+      "Create font-end markups and styles from UX screenshots.",
+      "Wrote unit and integration tests."
+    ]
+  }
+]

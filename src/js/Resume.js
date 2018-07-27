@@ -8,6 +8,9 @@ import summaryData from './../json/summary.json'
 // skills
 import Skills from './Skills';
 import skillsData from './../json/skills.json'
+// experience
+import Experience from './Experience';
+import experienceData from './../json/experience.json'
 
 class Resume extends Component {
   render() {
@@ -17,74 +20,7 @@ class Resume extends Component {
         <div id="mainArea" className="quickFade delayFive">
           <Summary data={summaryData} />
           <Skills data={skillsData} />
-          
-          <section>
-            <div className="sectionTitle">
-              <h1>Work Experience</h1>
-            </div>
-            <div className="sectionContent">
-              <article>
-                <h2>Constant Contact</h2>
-                <div className="gridWrapper">
-                  <p className="subDetails">Software Engineer Intern</p>
-                  <p className="subDetails">May 2017 - August 2017</p>
-                </div>
-                <ul className="workList">
-                  <li>Contributed to the development of front-end and web services as a member of the "Tesla" scrum team.</li>
-                  <li>Created endpoints for donation and payment services in Spring.</li>
-                  <li>Used BackboneJS to implement front-end features.</li>
-                  <li>Enhanced the functionality of gems used for supporting cucumber testing.</li>
-                  <li>Helped to maintain and debug continuous integration pipeline.</li>
-                  <li>Upgraded CentOS version on servers.</li>
-                  <li>Wrote unit and integration tests.</li>
-                </ul>
-              </article>
-            </div>
-            <div className="clear"></div>
-          </section>
-
-          <section>
-            <div className="sectionContent">
-              <article>
-                <h2>Constant Contact</h2>
-                <div className="gridWrapper">
-                  <p className="subDetails">Software Engineer Intern</p>
-                  <p className="subDetails">May 2016 - December 2016</p>
-                </div>
-                <ul className="workList">
-                  <li>Designed, developed, and tested front-end functionality as a member of the "Toolkit" scrum team.</li>
-                  <li>Used Spring to create controllers and endpoints for Toolkit web services.</li>
-                  <li>Implemented UI functionality using angular and ES5 javascript.</li>
-                  <li>Contributed to the enhancement of core modules used to manage iframes.</li>
-                  <li>Worked with continuous deployment team to debug issues in the pipeline.</li>
-                  <li>Wrote unit and integration tests.</li>
-                </ul>
-              </article>
-            </div>
-            <div className="clear"></div>
-          </section>
-
-          <section>
-            <div className="sectionContent">
-              <article>
-                <h2>Eagledream Health</h2>
-                <div className="gridWrapper">
-                  <p className="subDetails">Full Stack Engineer Intern</p>
-                  <p className="subDetails">May 2015 - January 2016</p>
-                </div>
-                <ul className="workList">
-                  <li>Worked in a scrum team. Primarily focuses were front-end development and testing.</li>
-                  <li>Involved with scrum ceremonies and production feature development.</li>
-                  <li>Wrote queries in Postgres to retrieve data.</li>
-                  <li>Implemented Restful endpoints for web services.</li>
-                  <li>Developed UI directives in angular.</li>
-                  <li>Create font-end markups and styles from UX screenshots.</li>
-                  <li>Wrote unit and integration tests.</li>
-                </ul>
-              </article>
-              </div>
-            <div className="clear"></div>
-          </section>
+          <Experience data={experienceData} />
 
           <section>
             <div className="sectionTitle">
