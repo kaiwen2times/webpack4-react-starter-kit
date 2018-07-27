@@ -1,0 +1,36 @@
+{
+  "title": "Projects",
+  "projects":
+  [
+    {
+      "name": "Voice",
+      "link": "http://www.kaiwenz.xyz",
+      "subDetails": "React, Node, MongoDB, Webpack, Speech-to-text",
+      "description": "The goal of the project is to develop a real-time speech-to-text service that automates the process of live captioning in classNameroom for hard of hearing students. The tech stack employs react with node express as web services and a mongo database to store notes. Speech-to-text process is done by IBM Watson through its web API. The app enables users to choose a className to tune in and experience live captioning from the browser."
+    },
+    {
+      "name": "HealthNet",
+      "subDetails": "Python, Django, Javascript, HTML, CSS, Sqlite3",
+      "link": "https://github.com/kaiwen2times/healthnet",
+      "description": "Worked with a small team to develop a Django framework web application for hospitals as a className project. The application provided features for managing employees, gathering health related data, signing up patients, making appointments, and allowing transfer of patients between hospitals."
+    },
+    {
+      "name": "Expense Tracker",
+      "subDetails": "Angularjs, Javascript, HTML, CSS",
+      "link": "https://github.com/kaiwen2times/expense-tracker",
+      "description": "Utilized angular and ES5 javascript to construct a web app capable of authenticating users and interacting with Expensify API to retrieve and update information about expenses."
+    },
+    {
+      "name": "NXP Cup North America 2016",
+      "subDetails": "C, Assembly, ARM",
+      "link": "https://www.youtube.com/watch?v=6mLF0HtRhHY",
+      "description": "Built and programmed an autonomous model car using a camera and PID algorithm to race around the track provided by NXP. Placed second in NXP Cup East Coast and forth in the North America Finals."
+    },
+    {
+      "name": "Trinity College Fire Fighting Robot Contest",
+      "subDetails": "C, Arduino, Solidworks",
+      "link": "https://www.youtube.com/watch?v=08yEyLyxS3c",
+      "description": "Performed as the project manager and programmer in small team to build a robot that can navigate inside a model house, detect and extinguish candle fire with compressed CO2."
+    }
+  ]
+}

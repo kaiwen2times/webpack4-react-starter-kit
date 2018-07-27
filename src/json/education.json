@@ -1,0 +1,24 @@
+{
+  "title": "Education",
+  "schools":
+  [
+    {
+      "name": "Rochester Institude of Technology",
+      "year": "September 2014 - December 2017",
+      "points":
+      [
+        "Bachelors of Science in Computer Engineering",
+        "3.78 accumulative GPA"
+      ]
+    },
+    {
+      "name": "Monroe Community College",
+      "year": "September 2012 – May 2014",
+      "points":
+      [
+        "Associate degree in Computer Engineering",
+        "Vice President of Events of Engineering Leadership Council"
+      ]
+    }
+  ]
+}

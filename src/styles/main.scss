@@ -38,6 +38,13 @@ p {
   color: #444;
 }
 
+p.schoolDetails {
+  font-size: 1.1em;
+  line-height: 1.4em;
+  margin-bottom: 3px;
+  color: #444;
+}
+
 #cv {
   padding-top: 30px;
   width: 90%;
@@ -191,6 +198,10 @@ section:last-child {
 }
 
 a.subLink {
+  text-decoration: none;
+}
+
+a.subLink:hover {
   color: #18BC9C;
 }
 
