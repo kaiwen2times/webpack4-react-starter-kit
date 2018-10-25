@@ -4,8 +4,8 @@
   "description": "Minimal setup for React environment with Webpack and Babel",
   "main": "index.js",
   "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
@@ -17,12 +17,12 @@
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.8.3",
+    "node-sass": "^4.9.4",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.21.0",
-    "webpack": "^4.16.2",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "webpack": "^4.23.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --config webpack.dev.config.js --open",
