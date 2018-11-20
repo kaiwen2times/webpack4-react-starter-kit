@@ -1,5 +1,6 @@
 // webpack v4
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 // directories go here
@@ -8,19 +9,17 @@ const HTML_DIR = path.resolve(__dirname, './src/html');
 const DIST_DIR = path.resolve(__dirname, './dist');
 
 module.exports = {
+  mode: 'development',
   entry: {
     main: APP_DIR + '/index.js'
   },
   output: {
     path: DIST_DIR,
-    filename: 'index.js',
+    filename: '[name].js',
     publicPath: '/'
   },
-  devServer: {
-    contentBase: DIST_DIR,
-    //compress: true,
-    port: 8888
-  },
+  target: 'web',
+  devtool: '#source-map',
   module: {
     rules: [
       {
@@ -61,7 +60,9 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: HTML_DIR + '/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      excludeChunks: ['server']
     }),
+    new webpack.NoEmitOnErrorsPlugin()
   ]
 };

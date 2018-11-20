@@ -4,6 +4,7 @@
   "description": "Minimal setup for React environment with Webpack and Babel",
   "main": "index.js",
   "dependencies": {
+    "express": "^4.16.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-router-dom": "^4.3.1"
@@ -20,16 +21,17 @@
     "node-sass": "^4.9.4",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.21.0",
-    "webpack": "^4.23.0",
+    "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-node-externals": "^1.7.2"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development --config webpack.dev.config.js --open",
+    "start": "rm -rf dist/ && npm run dev && node ./dist/server.js",
     "test": "echo \"Error, no test specified\" && exit 1",
-    "dev": "webpack --mode development --config webpack.dev.config.js",
-    "server": "npm run dev && npm start",
-    "prod": "webpack --mode production --config webpack.prod.config.js"
+    "dev": "webpack --mode development --config webpack.server.config.js && webpack --config webpack.dev.config.js",
+    "prod": "webpack --mode production --config webpack.server.config.js && webpack --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
