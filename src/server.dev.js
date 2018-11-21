@@ -2,7 +2,7 @@ import path from 'path';
 import express from 'express';
 import webpack from 'webpack';
 import webpackDevMiddleware from 'webpack-dev-middleware';
-import config from '../../../webpack.dev.config.js';
+import config from '../webpack.dev.config.js';
 
 const compiler = webpack(config);
 const APP_DIR = path.resolve(__dirname, '../');
@@ -25,4 +25,4 @@ app.get('/healthcheck', (req, res) => {
 });
 
 console.log('listening at port:%s', port);
-server.listen(port);
+app.listen(port);
