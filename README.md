@@ -36,6 +36,8 @@ Next let's get the server up and running
 npm start
 ```
 
+Lastly, open up a web browser and navigate to [localhost:8080](localhost:8080)
+
 ## Running the tests
 
 Don't have tests yet...
