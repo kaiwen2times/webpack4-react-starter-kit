@@ -12,7 +12,7 @@ There are three main scripts in ``` package.json ```
 
 1. ``` npm run dev ``` generates assets and puts them in the ``` /dist ``` folder. Meant for development.
 2. ``` npm run prod ``` same as former but compresses and optimizes the output assets. Meant for production.
-3. ``` npm run server ``` generates assets and host them at [localhost:9000](https://localhost:9000/). Watches file changes and auto-compile them.
+3. ``` npm run server ``` generates assets and host them at [localhost:8080](https://localhost:8080/). Watches file changes and auto-compile them.
 
 ### Installing
 
@@ -38,6 +38,23 @@ npm start
 
 Lastly, open up a web browser and navigate to [localhost:8080](localhost:8080)
 
+### Alternative Installation
+
+This project also employes docker for running inside a container. To start, first install [docker](https://www.docker.com/get-started)
+
+Then run:
+
+```
+docker-compose up
+```
+
+To connect to the docker instance:
+
+```
+docker ps
+docker exec -it {{containerID}} /bin/bash
+```
+
 ## Running the tests
 
 Don't have tests yet...
@@ -48,7 +65,7 @@ Please read [CONTRIBUTING.md](https://github.com/kaiwen2times/webpack4-react-sta
 
 ## Authors
 
-* **Kaiwen Zheng** - *Initial work* - [My link](http://www.kaiwenz.xyz/)
+* **Kaiwen Zheng** - *Initial work* - [My link](http://www.kaiwenz.com/)
 
 ## License
 

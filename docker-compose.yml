@@ -1,0 +1,19 @@
+version: "3"
+services:
+  dev:
+    # build from Dockerfile in current directory
+    image: node:10
+    # bind mount current directory on host to container
+    volumes:
+      - .:/projects/webpack-react-express-starter-kit
+    # where the command will be run
+    working_dir: /projects/webpack-react-express-starter-kit
+    # command to start the dev server
+    command: >
+      bash -c "npm rebuild node-sass 
+      && npm install
+      && npm start"
+    # maps host port to container port
+    ports:
+      - "8080:8080"
+      - "8443:8443"

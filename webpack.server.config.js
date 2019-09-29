@@ -3,9 +3,7 @@ const nodeExternals = require('webpack-node-externals');
 
 module.exports = (env, argv) => {
   const DIST_DIR = path.resolve(__dirname, './dist');
-  const SERVER_DIR = (argv.mode === 'production') ?
-    path.resolve(__dirname, './src/server.prod.js') :
-    path.resolve(__dirname, './src/server.dev.js');
+  const SERVER_DIR = path.resolve(__dirname, './src/server.js');
 
   return ({
     entry: {
