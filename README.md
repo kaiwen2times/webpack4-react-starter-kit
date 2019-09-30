@@ -19,8 +19,8 @@ There are three main scripts in ``` package.json ```
 First checkout the repo and change directory into it
 
 ```
-git clone https://github.com/kaiwen2times/webpack4-react-starter-kit.git
-cd webpack4-react-starter-kit
+git clone https://github.com/kaiwen2times/webpack-react-express-starter-kit.git
+cd webpack-react-express-starter-kit
 ```
 
 Then install the packages with
