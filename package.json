@@ -4,9 +4,9 @@
   "description": "Minimal setup for React environment with Webpack and Babel",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.16.4",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
+    "express": "^4.17.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
@@ -18,13 +18,13 @@
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.21.0",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-middleware": "^3.5.2",
-    "webpack-dev-server": "^3.1.14",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.8.2",
     "webpack-node-externals": "^1.7.2"
   },
   "scripts": {
